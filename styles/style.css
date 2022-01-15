@@ -1,0 +1,45 @@
+/* utility */
+header{
+
+}
+main{
+    margin: 4rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+/* top section*/
+
+ .top-section{
+     margin:0 1rem;
+ }
+ .top-sec{
+    display: flex;
+     
+}
+
+/* popular collection */
+.collection-heading{
+    text-align: center;
+}
+.popular-collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    
+}
+.products{
+    width: 15em;
+    margin: 0.1em .1em;
+    padding: .6em;
+    border-radius: .5em;
+    box-shadow: 3px 4px 10px #88888854;
+    
+}
+.products img{
+    width: 100%;
+    padding: 0em;
+}
+
