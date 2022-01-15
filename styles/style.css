@@ -107,6 +107,9 @@ main{
     border-radius: 5px;
     
 }
+.half-width h3{
+    text-align: center;
+}
 .half-width:hover img{
     box-shadow: 3px 4px 30px #88888854;
 }
