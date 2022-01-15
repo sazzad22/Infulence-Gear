@@ -10,6 +10,7 @@ header{
     line-height: 70px;
     background-color: #46B2E0;
     color: white;
+    font-weight: 700;
 }
 main{
     margin: 4rem 7rem;
@@ -18,11 +19,18 @@ main{
     justify-content: center;
     align-items: center;
 } 
+.button{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
 /* top section*/
 
  .top-section{
      margin:0 1rem;
  }
+ 
  .flex-it{
     display: flex;
      
@@ -82,6 +90,12 @@ main{
     width: 100%;
     padding: 0em;
 }
+.fa-star{
+    color: goldenrod;
+}
+.empty-star{
+    color: gray;
+}
 /* third-section */
 .half-width{
     width: 50%;
@@ -89,7 +103,7 @@ main{
     padding: 50px;
 }
 .half-width img{
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
     
 }
@@ -105,17 +119,51 @@ footer{
   padding: 3px;
   background-color: #46B2E0;
   color: white;
+}
 footer h3 , p{
     text-align: center;
     
 }
-@media only screen and (max-width:688px) {
-    .products{
+
+
+/* media query */
+
+
+@media only screen and (max-width:576px) {
+    header{
+        margin: 0px 20px;
+    }
+    .popular-collections{
         grid-template-columns: repeat(1,1fr);
         
     }
     .flex-it{
-        
+        display: block;
+    }
+    
+    .half-width{
+        padding: 0;
+        width: 400px;
     }
 }
+@media only screen and (min-width:577px) and (max-width:768px) {
+    header{
+        margin: 0px 20px;
+    }
+    
+    .popular-collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .flex-it{
+        display: block;
+    }
+    .half-width{
+        padding: 0;
+        width: 500px;
+    }
+}
+}   
+
+
+
 
