@@ -2,10 +2,10 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    ;
+    
 }
 header{
-    margin: 20px 7rem;
+    margin: 0;
     text-align: center;
     line-height: 70px;
     background-color: #46B2E0;
@@ -19,12 +19,22 @@ main{
     justify-content: center;
     align-items: center;
 } 
+.heading-text{
+    color: rgb(77, 75, 75);
+    font-size: 2em;
+    font-weight: 700;
+}
+.top-text p{
+    text-align: left;
+}
 .button{
     background-color: #23C4ED;
     color: white;
     padding: 5px 20px;
     border-radius: 10px;
+     text-decoration: none;
 }
+
 /* top section*/
 
  .top-section{
@@ -48,6 +58,7 @@ main{
     width: 15%;
     height: 15%;
     transition: transform .4s ease-out .2s;
+    
 }
 .big-car{
     width: 15%;
@@ -68,6 +79,7 @@ main{
 }
 
 /* popular collection */
+
 .collection-heading{
     text-align: center;
 }
@@ -89,6 +101,9 @@ main{
 .products img{
     width: 100%;
     padding: 0em;
+}
+.product-info p{
+    text-align: left;
 }
 .fa-star{
     color: goldenrod;
@@ -115,7 +130,7 @@ main{
 }
 
 
-/* footer section */
+/* footer section starts*/
 footer{
     
     text-align: center;
@@ -127,7 +142,7 @@ footer h3 , p{
     text-align: center;
     
 }
-
+/* footer section ends */
 
 /* media query */
 
@@ -141,28 +156,72 @@ footer h3 , p{
         
     }
     .flex-it{
-        display: block;
+        display: flex;
+        flex-flow: column;
     }
+    #first-object{order:2;}
+    #second-object{order:1;}
     
     .half-width{
         padding: 0;
         width: 400px;
     }
+    /* animation */
+    .car-animation{
+        padding: 100px 120px 100px 70px;
+    }
+    .small-car{
+        height: 30px;
+        width: 90px;
+        left: 100px;
+    }
+    .big-car{
+        height: 30px;
+        width: 90px;
+        left: 100px;
+    }
+
 }
+
 @media only screen and (min-width:577px) and (max-width:768px) {
     header{
         margin: 0px 20px;
     }
+    .ab{
+        display: flex;
+        flex-flow: column;
+    }
+
+    #first-object{order:2;}
+    #second-object{order:1;}
     
     .popular-collections{
         grid-template-columns: repeat(2,1fr);
     }
     .flex-it{
-        display: block;
+        display: flex;
+        flex-flow: column;
     }
+    #a{order:2;}
+    #b{order:1;}
     .half-width{
         padding: 0;
         width: 500px;
+    }
+    /* animation */
+    .car-animation{
+        padding: 100px 120px 100px 70px;
+    }
+
+    .small-car{
+        height: 30px;
+        width: 90px;
+        left: 100px;
+    }
+    .big-car{
+        height: 30px;
+        width: 90px;
+        left: 100px;
     }
 }
 
